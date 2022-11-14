@@ -1,0 +1,23 @@
+.footer{
+    width: 100%;
+    height: 10rem;
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .footer-title{
+    color: var(--special-color);
+  }
+.footer-list{
+  list-style: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.footer-list__item{
+ margin-top: 6px; 
+ color: var(--primary-color);
+ cursor: pointer;
+}

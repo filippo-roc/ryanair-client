@@ -1,0 +1,227 @@
+.summary {
+  height: auto;
+  padding: 4rem;
+}
+.summary-title {
+  color: var(--secondary-color);
+  margin-top: 2rem;
+}
+.summary-container {
+  width: 100%;
+  height: 80%;
+  margin-top: 2rem;
+  border: 2px dashed rgba(0, 0, 0, 0.507);
+  background-color: var(--primary-color);
+  padding: 1rem;
+}
+
+.summary-btn {
+  width: 12rem;
+  height: 2.5rem;
+  background-color: var(--special-color);
+  color: var(--secondary-color);
+  font-weight: 900;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+.summary-flights {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.summary-flights__container {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.summary-flights__title {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  display: inline-block;
+}
+.summary-flights__date {
+  font-size: 1.5em;
+  color: var(--secondary-color);
+  font-weight: 600;
+  display: inline-block;
+}
+.summary-flight {
+  width: 85%;
+  height: 10rem;
+  margin: 0 auto;
+  box-shadow: 3px 1px 7px 1px #cdcdcd;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  border-bottom: 3px solid rgb(0, 143, 0);
+  border-radius: 8px;
+}
+
+.summary-error-message {
+  background-color: red;
+}
+
+.summary-flight__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.summary-flight__block__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.summary-flight-effect {
+  display: flex;
+  align-items: center;
+}
+.summary-flight-effect__effect {
+  width: 10rem;
+  height: 2px;
+  display: inline-block;
+  font-size: 1.1rem;
+  background-color: rgba(122, 122, 122, 0.308);
+}
+.summary-flight-effect__icon {
+  padding: 0 1rem;
+  color: var(--special-color);
+}
+.summary-flight-effect__icon--return {
+  transform: scaleX(-1);
+}
+.summary-flight__block:nth-child(1) {
+  width: 50%;
+  justify-content: space-around;
+  height: 100%;
+}
+.time-and-place {
+  height: 100%;
+}
+.time-and-place__time {
+  font-size: 1.5rem;
+}
+.time-and-place__place {
+  font-size: 1.1rem;
+  color: rgba(128, 128, 128, 0.801);
+  font-weight: 500;
+}
+.summary-flight__block:nth-child(2) {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+.summary-flight-information-title {
+  color: rgba(128, 128, 128, 0.801);
+  font-weight: 500;
+}
+.summary-flight__block:nth-child(3) {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+.summary-flight-price {
+  font-size: 2rem;
+}
+.summary-flight-price {
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+.summary-passengers {
+  margin-top: 2rem;
+}
+.summary-total {
+  font-size: 1.5rem;
+  width: 100%;
+  padding: 0.8rem 0.8rem;
+  font-weight: 900;
+  color: var(--tertiary-color);
+  margin: 0 auto;
+}
+.summary-total__amount {
+  color: var(--secondary-color);
+  font-weight: 900;
+}
+.passenger {
+  width: 50%;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: var(--primary-color);
+  box-shadow: 2px 2px 19px 1px rgb(221 221 221);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 3px solid var(--secondary-color);
+}
+
+.passenger__type {
+  font-weight: 700;
+}
+.passenger__name {
+  color: rgb(112, 112, 112);
+}
+
+@media (max-width: 1130px) {
+  .summary-flight {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .summary-flight__block {
+    margin: 1rem;
+  }
+  .summary-flight__block:nth-child(1) {
+    width: 90%;
+  }
+  .summaryflight__block:nth-child(2) {
+    width: 90%;
+  }
+  .passenger {
+    width: 80%;
+  }
+  .summary-flight__block:nth-child(2) {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .summary-flight {
+    width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .summary {
+    padding: 1rem;
+    padding-top: 4rem;
+  }
+  .summary-flight-effect__effect {
+    display: none;
+  }
+  .summary-flight-effect {
+    justify-content: center;
+  }
+  .summary-flight__block:nth-child(1) {
+    width: 100%;
+    padding: 0;
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 1rem;
+  }
+  .summary-flight__block:nth-child(2) {
+    padding-bottom: 1rem;
+  }
+  .passenger {
+    width: 100%;
+  }
+}

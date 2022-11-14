@@ -1,0 +1,22 @@
+.flights-list{
+    list-style: none;
+    padding: 0 1rem;
+}
+.flight-list__item--active{
+    border-bottom: 3px solid rgb(0, 143, 0) !important;
+}
+.spinner-container{
+  width: 100%;
+  height: 20rem;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner{
+  position: absolute;
+  top: 25%;
+  right: 45%;
+}

@@ -1,0 +1,33 @@
+.message {
+  width: 40rem;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 2rem;
+}
+.message__icon {
+  font-size: 4rem;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  padding: 0 1rem;
+  color: var(--special-color);
+  transform: rotate(330deg);
+}
+
+@media (max-width: 700px) {
+  .message {
+    width: 93%;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+}

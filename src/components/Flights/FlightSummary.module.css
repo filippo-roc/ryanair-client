@@ -1,0 +1,39 @@
+.flight-summary{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    padding: 0 1rem;
+}
+.flight-summary__information{
+    font-size: 1.5em;
+    padding: 0 2rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+    display: inline-block;
+}
+.flight-summary__icon{
+    width: 1.5rem;
+    fill: var(--secondary-color);
+}
+.flight-summary__icon--return{
+    transform: scaleX(-1);
+}
+
+@media (max-width: 575px) {
+    .flight-effect__effect{
+        display: none;
+    }
+    .flight-effect{
+        justify-content: center;
+    }
+}
+@media (max-width: 500px) {
+    .flight-summary{
+        flex-direction: column;
+    }
+    .flight-summary__information{
+        margin-top: 1rem;
+    }
+    
+}

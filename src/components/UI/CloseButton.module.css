@@ -1,0 +1,29 @@
+.close__btn{
+    display: block;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    z-index: 3;
+    position: absolute;
+    left: 18px;
+    top: 29px;
+  }
+  
+  .close__btn__bar{
+    background: rgb(255, 255, 255);
+    height: 3px;
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  .close__btn__bar:nth-child(1){
+    transform : translateY(8px) rotate(45deg)
+  }
+  .close__btn__bar:nth-child(2){
+  opacity: 0;
+  }
+  .close__btn__bar:nth-child(3){
+    transform : translateY(-8px) rotate(-45deg)
+  }

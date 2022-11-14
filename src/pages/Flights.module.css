@@ -1,0 +1,32 @@
+p{
+    padding: 3px 0;
+}
+.flights{
+    height: auto;
+    width: 100%;
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+}
+
+.flights__btn{
+    margin-top: 2rem;
+    width: 12rem;
+    height: 2.5rem;
+    background-color: var(--special-color);
+    color: var(--secondary-color);
+    font-weight: 900;
+    font-size: 16px;
+    cursor: pointer;
+}
+.flights__error-block{
+    width: 90%;
+    height: 8rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:1.5rem;
+    font-weight:700;
+    box-shadow: 3px 1px 7px 1px #cdcdcd;
+}

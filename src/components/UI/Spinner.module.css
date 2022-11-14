@@ -1,0 +1,33 @@
+.loader {
+  border-top: 16px solid var(--secondary-color);
+  border-bottom: 16px solid var(--special-color);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 1.5s linear infinite;
+
+}
+.reverse-loader {
+  border-top: 16px solid var(--secondary-color);
+  border-bottom: 16px solid var(--special-color);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin2 1.5s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate3d(1, 1, 1, 0deg);
+  }
+  100% {
+    transform: rotate3d(1, 1, 1, 360deg);
+  }
+}
+@keyframes spin2 {
+  0% {
+    transform: rotate3d(1, 1, 1, 360deg);
+  }
+  100% {
+    transform: rotate3d(1, 1, 1, 0deg);
+  }
+}

@@ -1,0 +1,128 @@
+
+.flight{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 10rem;
+    box-shadow: 3px 1px 7px 1px #cdcdcd;
+    margin-bottom: 2.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+}
+
+.flight__block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+
+}
+.flight__block__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.flight-effect{
+display: flex;
+align-items: center;
+}
+.flight-effect__effect{
+    width: 10rem;
+    height: 2px;
+    display: inline-block;
+    font-size: 1.1rem;
+    background-color: rgba(122, 122, 122, 0.308);
+}
+.flight-effect__icon{
+    padding: 0 1rem;
+    color: var(--special-color);
+}
+.flight-effect__icon--return{
+    transform: scaleX(-1);
+}
+.flight__block:nth-child(1){
+    width: 50%;
+    justify-content: space-around;
+    height: 100%;
+}
+.time-and-place{
+    height: 100%;
+}
+.time-and-place__time{
+    font-size: 1.5rem;
+}
+.time-and-place__place{
+    font-size: 1.1rem;
+    color: rgba(128, 128, 128, 0.801);
+    font-weight: 500;
+}
+.flight__block:nth-child(2){
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+.flight-information-title{
+    color: rgba(128, 128, 128, 0.801);
+    font-weight: 500;
+}
+.flight__block:nth-child(3){
+    display: flex;
+    justify-content: space-between;
+}
+.flight-price{
+    font-size: 2rem;
+}
+.flight-price{
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+.flight-btn{
+    width: 13rem;
+    height: 2.3rem;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: bold;   
+    font-size: 1.1rem;
+}
+
+@media (max-width:1130px) {
+    .flight{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        }
+    .flight__block{
+        margin: 1rem;
+    }
+    .flight__block:nth-child(1){
+        width: 90%;
+    }
+    .flight__block:nth-child(2){
+        width: 90%;
+    }
+} 
+
+@media (max-width: 768px) {
+    .flight{
+        width: 100%;
+    }
+}
+@media (max-width: 575px) {
+    
+    .flight-effect__effect{
+        display: none;
+    }
+    .flight-effect{
+        justify-content: center;
+    }
+    .flight__block:nth-child(1){
+        width: 100%;
+        padding: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+}

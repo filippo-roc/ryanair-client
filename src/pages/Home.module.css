@@ -1,0 +1,116 @@
+.home {
+  height: 120vh;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.home__block {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  height: 100%;
+  padding: 5rem 0;
+}
+.home__block:nth-child(1) {
+  width: 70%;
+}
+.home__block__title {
+  text-transform: capitalize;
+  padding-top: 4rem;
+  font-size: 44px;
+  text-align: left;
+}
+
+.home__block__title--special-color {
+  color: var(--secondary-color);
+}
+.home__block__container-form{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+.home__block:nth-child(2) {
+  width: 30%;
+  align-items: center;
+  padding: 0q 1rem 0rem 1rem;
+  background-color: var(--secondary-color);
+}
+.home__block__background-icon{
+  position: absolute;
+  left: 39%;
+  top: 54%;
+  font-size: 3rem;
+  display: flex;
+  height: 25rem;
+  width: 18rem;
+  align-items: flex-start;
+  z-index: -1;
+}
+.home__block__icon{
+    font-size: 17rem;
+    transform: rotate(220deg);
+    color: var(--primary-color);
+}
+.home__block__title-2{
+  text-transform: capitalize;
+  padding-top: 5rem;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+.home__block__title-2--special-color{
+  color: var(--special-color);
+}
+.home__block__list{
+  list-style: none;
+  width: 100%;
+  padding-left: 1.4rem;
+  font-weight: 700;
+  text-align: left;
+  padding-top: 8px;
+  color: var(--primary-color);
+}
+.home__block__list__item{
+  padding-top: 8px;
+}
+.home__block__list > .home__block__list__item:before {
+  content: "–"; /* en dash */
+  position: absolute;
+  margin-left: -1.1em; 
+}
+
+@media (max-width:1400px) {
+  .home{
+    justify-content: center;
+  }
+  .home__block__title{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  .home__block:nth-child(1){
+    width: 100%;
+  }
+  .home__block:nth-child(2){
+    display: none;
+  }
+
+}
+@media (max-height:750px) {
+  .home__block{
+    padding: 0;
+  }
+}
+@media (max-width:700px) {
+  .home{
+    height: auto;
+  }
+  .home__block__title{
+    font-size: 30px;
+  }
+}
+

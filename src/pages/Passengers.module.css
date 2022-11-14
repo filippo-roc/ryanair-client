@@ -1,0 +1,11 @@
+.passengers-page{
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+}
+.passengers-pages__introduction{
+    text-align: center;
+}
+.passengers-pages__introduction-title{
+    color: var(--secondary-color);
+    line-height: 3rem;
+}

@@ -1,0 +1,113 @@
+.search-flights {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-right: 15rem;
+}
+.search-flights__container-blocks {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-flights__container-blocks--passengers {
+  justify-content: flex-start;
+}
+
+.search-flights__icon {
+  margin-bottom: 64px;
+}
+.search-flights__icon--passengers {
+  margin-bottom: 38px;
+}
+.search-flights__block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 4rem;
+}
+.search-flights__block--passengers {
+  margin-left: 2.5rem;
+}
+
+.search-flights__block__input {
+  width: 20em;
+  height: 2.4rem;
+  border-radius: 8px;
+  border: 2px solid rgba(128, 128, 128, 0.534);
+  padding-left: 0.5rem;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.781);
+}
+.search-flights__block__input::placeholder {
+  color: rgba(0, 0, 0, 0.781);
+}
+.search-flights__block__input--passengers {
+  width: 5rem;
+  height: 2.4rem;
+}
+.search-flights__block__input:focus {
+  border: 2px solid var(--secondary-color);
+}
+.search-flights__block__label {
+  padding-left: 0.5rem;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+.search-flights__block__btn {
+  width: 12rem;
+  height: 2.5rem;
+  background-color: var(--special-color);
+  color: var(--secondary-color);
+  font-weight: 900;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.search-flights__block__input--invalid {
+  border: 1px solid #b40e0e;
+  background-color: #fddddd;
+}
+
+.search-flights__block__input--invalid:focus {
+  border-color: #ff8800;
+  background-color: #fbe8d2;
+}
+
+.search-flights__block__error-message {
+  height: 1.8rem;
+  color: red;
+  display: flex;
+  padding-left: 0.5rem;
+  align-items: center;
+}
+
+@media (max-width: 1400px) {
+  .search-flights {
+    margin: 0 auto;
+    width: 746px;
+  }
+}
+@media (max-width: 700px) {
+
+  .search-flights__container-blocks {
+    flex-direction: column;
+  }
+  .search-flights__container-blocks:nth-child(3) {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .search-flights__icon {
+    display: none;
+  }
+  .search-flights__block {
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+  .search-flights__block__btn {
+    margin: 0 auto;
+    margin-top: 3rem;
+  }
+
+}
