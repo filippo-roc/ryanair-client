@@ -1,7 +1,9 @@
 # ryanair-client
 look for a flight and book it.
 
-airports available(for now) : Palermo, Milano.
+Airports available(for now) : Palermo, Milano.
+
+Dates available: one week.
 
 # Features:
 - flight search
