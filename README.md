@@ -4,7 +4,6 @@ look for a flight and book it.
 airports available(for now) : Palermo, Milano.
 
 #Features:
-- features :
 - flight search
 - adding passengers
 - baggage selection
